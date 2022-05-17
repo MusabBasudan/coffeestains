@@ -1,0 +1,32 @@
+global-styling:
+  css:
+    theme:
+      assets/css/bootstrap.min.css: {}
+      assets/css/animate.min.css: {}
+      assets/css/jquery-ui.min.css: {}
+      assets/css/meanmenu.min.css: {}
+      assets/lib/css/nivo-slider.css: {}
+      assets/lib/css/preview.css: {}
+      assets/css/slick.min.css: {}
+      assets/css/lightbox.min.css: {}
+      assets/css/material-design-iconic-font.css: {}
+      assets/css/default.css: {}
+      assets/style.css: {}
+      assets/css/shortcode.css: {}
+      assets/css/responsive.css: {}
+  js:
+    assets/js/vendor/jquery-3.6.0.min.js: {}
+    assets/js/vendor/jquery-migrate-3.3.2.min.js: {}
+    assets/js/bootstrap.bundle.min.js: {}
+    assets/js/jquery.meanmenu.js: {}
+    assets/js/slick.min.js: {}
+    assets/js/jquery.treeview.js: {}
+    assets/js/lightbox.min.js: {}
+    assets/js/jquery-ui.min.js: {}
+    assets/lib/js/jquery.nivo.slider.js: {}
+    assets/lib/home.js: {}
+    assets/js/jquery.nicescroll.min.js: {}
+    assets/js/countdon.min.js: {}
+    assets/js/wow.min.js: {}
+    assets/js/plugins.js: {}
+    assets/js/main.js: {}
