@@ -3,7 +3,16 @@ type: theme
 description: 'Custom theme'
 package: Other
 core_version_requirement: ^9
-logo: logo.png
+logo: 'logo.svg'
 libraries:
-  - momrah/global-styling
+  - global-styling
 base theme: bootstrap
+
+regions:
+  header: 'Top Bar'
+  navigation: 'Navigation'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
