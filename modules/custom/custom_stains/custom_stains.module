@@ -1,0 +1,15 @@
+<?php
+function custom_stains_theme()
+{
+  return [
+    'custom_stains' => [
+      'render element' => 'children',
+    ],
+    'footer_block' => array(
+      'variables' => array('items' => null,),
+    ),
+    'header_block' => array(
+      'variables' => array('items' => null,),
+    ),
+  ];
+}

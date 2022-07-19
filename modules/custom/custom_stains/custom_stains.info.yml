@@ -1,0 +1,7 @@
+name: 'Custom Stains'
+type: module
+description: 'Custom Stains Platform Module'
+core_version_requirement: ^8.8.0 || ^9
+package: 'Custom'
+dependencies:
+  - block

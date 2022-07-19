@@ -1,0 +1,61 @@
+<div
+	class="wrapper bg-dark-white">
+	<!-- navigation -->
+	{% if page.navigation  %}
+		{{ page.navigation }}
+	{% endif %}
+	<!-- navigation -->
+
+	<!-- main -->
+	<div
+		role="main">
+		<!-- header -->
+		{% if page.header %}
+			{% block header %}
+				<header id="sticky-menu" class="header header-2">
+					{{ page.header }}
+				</header>
+			{% endblock %}
+		{% endif %}
+		<!-- header -->
+
+		{# Sidebar First 
+								{% if page.sidebar_first %}
+									{% block sidebar_first %}
+										<aside class="col-sm-3" role="complementary">
+											{{ page.sidebar_first }}
+										</aside>
+									{% endblock %}
+								{% endif %} #}
+
+		{# Content #}
+			{% if page.content %}
+				{% block content %}<a id="main-content"> </a>
+				{{ page.content }}
+			{% endblock %}
+		{% endif %}
+
+		{# Highlighted 
+								{% if page.highlighted %}
+									{% block highlighted %}
+										<div class="highlighted">{{ page.highlighted }}</div>
+									{% endblock %}
+								{% endif %} #}
+
+		{# Help 
+								{% if page.help %}
+									{% block help %}
+										{{ page.help }}
+									{% endblock %}
+								{% endif %} #}
+	</div>
+	<!-- main -->
+
+	<!-- footer -->
+	{% if page.footer %}
+		<div class="footer-area footer-2">
+			{{ page.footer }}
+		</div>
+	{% endif %}
+	<!-- footer -->
+</div>

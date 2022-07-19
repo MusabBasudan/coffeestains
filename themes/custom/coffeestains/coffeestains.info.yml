@@ -9,8 +9,8 @@ libraries:
 base theme: bootstrap
 
 regions:
-  header: 'Top Bar'
   navigation: 'Navigation'
+  header: 'Top Bar'
   content: 'Content'
   sidebar_first: 'Primary'
   footer: 'Footer'
