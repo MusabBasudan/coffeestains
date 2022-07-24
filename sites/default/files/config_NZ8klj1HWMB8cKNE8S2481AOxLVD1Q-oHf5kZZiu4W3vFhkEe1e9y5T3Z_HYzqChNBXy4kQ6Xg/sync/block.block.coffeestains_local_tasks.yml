@@ -1,0 +1,22 @@
+uuid: ce1b7d9b-0c12-4e4f-b465-fca50b75fbd8
+langcode: en
+status: false
+dependencies:
+  theme:
+    - coffeestains
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: coffeestains_local_tasks
+theme: coffeestains
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

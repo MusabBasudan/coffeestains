@@ -1,0 +1,20 @@
+uuid: e58fe8b2-0597-41c3-9deb-2473cf0dbd78
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_stains
+  theme:
+    - coffeestains
+id: sliderblock
+theme: coffeestains
+region: front_page
+weight: -9
+provider: null
+plugin: slider_block
+settings:
+  id: slider_block
+  label: 'Slider block'
+  label_display: '0'
+  provider: custom_stains
+visibility: {  }

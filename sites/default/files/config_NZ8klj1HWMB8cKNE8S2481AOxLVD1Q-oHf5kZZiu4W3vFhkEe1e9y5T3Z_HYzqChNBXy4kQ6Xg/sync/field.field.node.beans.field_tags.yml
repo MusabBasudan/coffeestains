@@ -1,0 +1,33 @@
+uuid: ff01fc45-ae22-4c71-96c7-d528133218a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.beans
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:d740ac9a-ce2f-4533-9866-2c958db3316c'
+id: node.beans.field_tags
+field_name: field_tags
+entity_type: node
+bundle: beans
+label: Tags
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: d740ac9a-ce2f-4533-9866-2c958db3316c
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

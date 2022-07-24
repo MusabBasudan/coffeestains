@@ -16,56 +16,29 @@
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-3 col-sm-6">
-				<div class="single-footer">
-					<h3 class="footer-title  title-border">accounts</h3>
-					<ul class="footer-menu">
-						<li>
-							<a href="#">
-								<i class="zmdi zmdi-dot-circle"></i>My Account</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="zmdi zmdi-dot-circle"></i>My Wishlist</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="zmdi zmdi-dot-circle"></i>My Cart</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="zmdi zmdi-dot-circle"></i>Sign In</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="zmdi zmdi-dot-circle"></i>Check out</a>
-						</li>
-					</ul>
+				{% set footer = simplify_menu('footer') %}
+				{% for tree in footer.menu_tree %}
+					<div class="links {{ loop.index is even ? 'mx-5' }} ">
+						{% if tree.submenu %}
+							<h3 class="footer-title  title-border">{{ tree.text }}</h3>
+							<div class="single-footer">
+								<h3{{tree.text}}</h3>
+									<ul class="footer-menu">
+										{% for sub in tree.submenu %}
+											<li>
+												<a href="{{ sub.url }}">
+													<i class="zmdi zmdi-dot-circle"></i>
+													{{ sub.text }}</a>
+											</li>
+										{% endfor %}
+									</ul>
+								{% endif %}
+							</div>
+						{% endfor %}
+					</div>
 				</div>
+				{# {% set date = "now"|date("Y") %}
+																		<p class="mt-5 text-center">{{ drupal_config('custom_stains.settings', 'footer_copyright')|replace({'{year}': date }) }}</p> #}
 			</div>
-			{# <div class="col-lg-2 col-md-3 col-sm-6">
-																			<div class="single-footer">
-																				<h3 class="footer-title  title-border">shipping</h3>
-																				<ul class="footer-menu">
-																					<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>New Products</a></li>
-																					<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Top Sellers</a></li>
-																					<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Manufactirers</a></li>
-																					<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Suppliers</a></li>
-																					<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Specials</a></li>
-																				</ul>
-																			</div>
-																		</div> #}
-			{# <div class="col-lg-4 col-md-6">
-																			<div class="single-footer newsletter-item">
-																				<h3 class="footer-title  title-border">Email Newsletters</h3>
-																				<div class="footer-subscribe">
-																					<form action="#">
-																						<input type="text" name="email" placeholder="Email Address..." />
-																						<button class="button-one submit-btn-4" type="submit" data-text="Subscribe">Subscribe</button>
-																					</form>
-																				</div>
-																			</div>
-																		</div> #}
-		</div>
-	</div>
-</div>
-<!-- Footer-area end --></footer>
+			<!-- Footer-area end -->
+		</footer>

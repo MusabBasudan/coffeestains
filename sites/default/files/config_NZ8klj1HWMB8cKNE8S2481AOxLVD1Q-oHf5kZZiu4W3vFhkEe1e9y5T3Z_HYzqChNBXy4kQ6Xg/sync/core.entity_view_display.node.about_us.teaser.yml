@@ -1,0 +1,25 @@
+uuid: 78e3f582-e7b8-4f62-8414-8200befb2e7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_us.field_body
+    - field.field.node.about_us.field_image
+    - node.type.about_us
+  module:
+    - user
+id: node.about_us.teaser
+targetEntityType: node
+bundle: about_us
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_image: true
+  langcode: true

@@ -1,0 +1,18 @@
+uuid: c9e731bb-e51e-46cc-b390-da7f4ceaad55
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: slideshow
+type: slideshow
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

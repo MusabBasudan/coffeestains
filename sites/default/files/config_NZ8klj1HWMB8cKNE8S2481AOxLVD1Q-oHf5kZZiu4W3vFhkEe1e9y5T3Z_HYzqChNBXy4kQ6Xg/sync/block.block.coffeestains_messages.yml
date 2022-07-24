@@ -1,0 +1,22 @@
+uuid: 20ee600d-8a37-4d47-bf7c-43c4298f99a4
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - coffeestains
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: coffeestains_messages
+theme: coffeestains
+region: navigation
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

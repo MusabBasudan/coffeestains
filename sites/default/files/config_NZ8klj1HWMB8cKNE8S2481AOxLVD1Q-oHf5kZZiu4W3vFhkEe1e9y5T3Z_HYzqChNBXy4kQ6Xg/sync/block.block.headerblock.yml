@@ -1,0 +1,20 @@
+uuid: 8fd98853-995f-435d-9bb9-e8f7b6a00665
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_stains
+  theme:
+    - coffeestains
+id: headerblock
+theme: coffeestains
+region: header
+weight: 0
+provider: null
+plugin: header_block
+settings:
+  id: header_block
+  label: 'Header block'
+  label_display: '0'
+  provider: custom_stains
+visibility: {  }

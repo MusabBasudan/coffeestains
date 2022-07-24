@@ -1,0 +1,14 @@
+uuid: 7ea0d66a-6872-498e-999a-6deb6674d495
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.roaster
+  module:
+    - user
+id: user_add_role_action.roaster
+label: 'Add the Roaster role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: roaster

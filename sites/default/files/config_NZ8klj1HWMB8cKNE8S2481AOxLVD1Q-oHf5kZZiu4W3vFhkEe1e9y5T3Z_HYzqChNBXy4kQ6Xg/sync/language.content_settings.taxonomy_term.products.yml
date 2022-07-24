@@ -1,0 +1,16 @@
+uuid: 13704ca6-a9b1-40c2-b320-fe41c5aee3d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.products
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.products
+target_entity_type_id: taxonomy_term
+target_bundle: products
+default_langcode: site_default
+language_alterable: false

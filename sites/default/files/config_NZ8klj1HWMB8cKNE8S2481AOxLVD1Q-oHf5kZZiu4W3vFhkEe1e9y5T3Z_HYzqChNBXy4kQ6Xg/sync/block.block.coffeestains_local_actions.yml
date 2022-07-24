@@ -1,0 +1,20 @@
+uuid: 5faea282-13aa-4492-b48b-0caed7853e96
+langcode: en
+status: false
+dependencies:
+  theme:
+    - coffeestains
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: coffeestains_local_actions
+theme: coffeestains
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

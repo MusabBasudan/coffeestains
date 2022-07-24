@@ -1,0 +1,23 @@
+uuid: b418f905-7417-4471-81b4-24a3e4cddb24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_price
+    - node.type.beans
+id: node.beans.field_product_price
+field_name: field_product_price
+entity_type: node
+bundle: beans
+label: 'Product Price'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: SAR
+field_type: decimal

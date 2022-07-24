@@ -9,6 +9,7 @@
 	<!-- main -->
 	<div
 		role="main">
+
 		<!-- header -->
 		{% if page.header %}
 			{% block header %}
@@ -17,37 +18,30 @@
 				</header>
 			{% endblock %}
 		{% endif %}
-		<!-- header -->
 
-		{# Sidebar First 
-								{% if page.sidebar_first %}
-									{% block sidebar_first %}
-										<aside class="col-sm-3" role="complementary">
-											{{ page.sidebar_first }}
-										</aside>
-									{% endblock %}
-								{% endif %} #}
+		<!-- front page -->
+		{% if page.front_page %}
+			{{ page.front_page }}
+		{% endif %}
 
-		{# Content #}
-			{% if page.content %}
-				{% block content %}<a id="main-content"> </a>
-				{{ page.content }}
-			{% endblock %}
+		<!-- Content -->
+		{% if page.content %}
+			{{ page.content }}
 		{% endif %}
 
 		{# Highlighted 
-								{% if page.highlighted %}
-									{% block highlighted %}
-										<div class="highlighted">{{ page.highlighted }}</div>
-									{% endblock %}
-								{% endif %} #}
+				{% if page.highlighted %}
+					{% block highlighted %}
+						<div class="highlighted">{{ page.highlighted }}</div>
+					{% endblock %}
+				{% endif %} #}
 
 		{# Help 
-								{% if page.help %}
-									{% block help %}
-										{{ page.help }}
-									{% endblock %}
-								{% endif %} #}
+				{% if page.help %}
+					{% block help %}
+						{{ page.help }}
+					{% endblock %}
+				{% endif %} #}
 	</div>
 	<!-- main -->
 

@@ -20,6 +20,7 @@ class HeaderBlock extends BlockBase
    */
   public function build()
   {
+    $default_langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
     return array(
       '#theme' => 'header_block',
       '#items' => NULL,

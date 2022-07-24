@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '4c3b3fdbb77cfe8407ac68afb1a7e7072c429406',
+    'reference' => '3a1c505a8e6bdf7c231ff1352370913dd3837148',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -874,7 +874,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '4c3b3fdbb77cfe8407ac68afb1a7e7072c429406',
+      'reference' => '3a1c505a8e6bdf7c231ff1352370913dd3837148',
     ),
     'drupal/link' => 
     array (
@@ -1081,6 +1081,15 @@ private static $installed = array (
         0 => '9.4.1',
       ),
     ),
+    'drupal/simplify_menu' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.1',
+    ),
     'drupal/sqlite' => 
     array (
       'replaced' => 
@@ -1182,6 +1191,15 @@ private static $installed = array (
       array (
         0 => '9.4.1',
       ),
+    ),
+    'drupal/twig_tweak' => 
+    array (
+      'pretty_version' => '3.1.3',
+      'version' => '3.1.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.1.3',
     ),
     'drupal/update' => 
     array (

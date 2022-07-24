@@ -5,14 +5,15 @@ package: Other
 core_version_requirement: ^9
 logo: 'logo.svg'
 libraries:
-  - global-styling
+  - coffeestains/global-styling
 base theme: bootstrap
 
 regions:
   navigation: 'Navigation'
   header: 'Top Bar'
+  front_page: 'Front Page'
   content: 'Content'
-  sidebar_first: 'Primary'
+  sidebar_first: 'Primary Sidebar'
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'

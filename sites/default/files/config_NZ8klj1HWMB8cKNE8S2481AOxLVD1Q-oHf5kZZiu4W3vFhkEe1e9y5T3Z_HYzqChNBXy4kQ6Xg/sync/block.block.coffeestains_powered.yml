@@ -1,0 +1,22 @@
+uuid: 5ce62f73-5bf0-4d49-a8e4-90cebc4a2036
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - coffeestains
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: coffeestains_powered
+theme: coffeestains
+region: navigation
+weight: -2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

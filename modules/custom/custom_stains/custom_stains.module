@@ -11,5 +11,11 @@ function custom_stains_theme()
     'header_block' => array(
       'variables' => array('items' => null,),
     ),
+    'slider_block' => array(
+      'variables' => array('items' => null,),
+    ),
+    'products_block' => array(
+      'variables' => array('items' => null,),
+    ),
   ];
 }

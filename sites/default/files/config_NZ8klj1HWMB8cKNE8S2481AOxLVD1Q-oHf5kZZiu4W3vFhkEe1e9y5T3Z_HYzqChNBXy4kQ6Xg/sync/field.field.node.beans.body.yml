@@ -1,0 +1,23 @@
+uuid: 93401c40-0096-4960-8942-92d2e6512b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.beans
+  module:
+    - text
+id: node.beans.body
+field_name: body
+entity_type: node
+bundle: beans
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

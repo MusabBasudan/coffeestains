@@ -1,0 +1,14 @@
+uuid: f917e945-92c1-4711-99ea-34c13c0a3ba1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.roaster
+  module:
+    - user
+id: user_remove_role_action.roaster
+label: 'Remove the Roaster role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: roaster

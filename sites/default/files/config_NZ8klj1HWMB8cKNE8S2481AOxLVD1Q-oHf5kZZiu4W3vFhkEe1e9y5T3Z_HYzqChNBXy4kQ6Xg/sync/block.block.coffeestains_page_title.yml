@@ -1,0 +1,20 @@
+uuid: 6d509404-d460-41c0-8905-2f4750309a78
+langcode: en
+status: false
+dependencies:
+  theme:
+    - coffeestains
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: coffeestains_page_title
+theme: coffeestains
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

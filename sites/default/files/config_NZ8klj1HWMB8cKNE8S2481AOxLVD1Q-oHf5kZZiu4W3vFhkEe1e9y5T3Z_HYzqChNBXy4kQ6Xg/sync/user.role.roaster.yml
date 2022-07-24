@@ -1,0 +1,9 @@
+uuid: a04acb1e-90f0-46ac-a1d7-2b0e76b91b89
+langcode: en
+status: true
+dependencies: {  }
+id: roaster
+label: Roaster
+weight: 4
+is_admin: null
+permissions: {  }

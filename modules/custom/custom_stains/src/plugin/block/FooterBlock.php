@@ -12,16 +12,18 @@ use Drupal\Core\Block\BlockBase;
  *  admin_label = @Translation("Footer block"),
  * )
  */
-class FooterBlock extends BlockBase {
+class FooterBlock extends BlockBase
+{
 
   /**
    * {@inheritdoc}
    */
-  public function build() {
+  public function build()
+  {
+    $default_langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
     return array(
-     '#theme' => 'footer_block',
-     '#items' => NULL,
-  );
+      '#theme' => 'footer_block',
+      '#items' => NULL,
+    );
   }
-
 }

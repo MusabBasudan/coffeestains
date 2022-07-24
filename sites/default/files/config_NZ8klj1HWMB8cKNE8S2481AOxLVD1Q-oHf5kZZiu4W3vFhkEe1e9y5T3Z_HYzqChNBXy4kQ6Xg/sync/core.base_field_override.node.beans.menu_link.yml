@@ -1,0 +1,20 @@
+uuid: 93637b2c-ff96-4e95-9883-4911365736a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.beans
+id: node.beans.menu_link
+field_name: menu_link
+entity_type: node
+bundle: beans
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

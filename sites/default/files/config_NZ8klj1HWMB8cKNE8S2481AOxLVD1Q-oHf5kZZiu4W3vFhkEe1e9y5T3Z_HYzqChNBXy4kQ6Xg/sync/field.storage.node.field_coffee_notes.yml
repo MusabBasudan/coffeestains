@@ -1,0 +1,21 @@
+uuid: 26c32ed1-3e77-4bb6-9f4e-feff4980476c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_coffee_notes
+field_name: field_coffee_notes
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: ff60dc08-3388-4215-a569-c73d3b26bba4
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - coffeestains
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: coffeestains_content
+theme: coffeestains
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

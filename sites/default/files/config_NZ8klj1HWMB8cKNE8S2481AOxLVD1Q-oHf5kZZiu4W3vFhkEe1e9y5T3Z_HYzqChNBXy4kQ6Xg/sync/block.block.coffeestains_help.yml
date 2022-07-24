@@ -1,0 +1,22 @@
+uuid: 429ab166-0a0a-4689-a951-9889188cb5f6
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - coffeestains
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: coffeestains_help
+theme: coffeestains
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

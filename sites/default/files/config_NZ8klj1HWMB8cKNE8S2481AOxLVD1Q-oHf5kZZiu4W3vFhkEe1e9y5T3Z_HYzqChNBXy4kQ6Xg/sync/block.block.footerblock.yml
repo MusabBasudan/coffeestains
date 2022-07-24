@@ -1,0 +1,20 @@
+uuid: 72f6ec7c-d822-4370-b4ae-b16466214b09
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_stains
+  theme:
+    - coffeestains
+id: footerblock
+theme: coffeestains
+region: footer
+weight: -8
+provider: null
+plugin: footer_block
+settings:
+  id: footer_block
+  label: 'Footer block'
+  label_display: '0'
+  provider: custom_stains
+visibility: {  }

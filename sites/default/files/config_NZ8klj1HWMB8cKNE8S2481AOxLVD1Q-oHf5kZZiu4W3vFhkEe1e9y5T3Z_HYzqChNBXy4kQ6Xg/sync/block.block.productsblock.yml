@@ -1,0 +1,20 @@
+uuid: cbe40dee-0561-407e-bdc4-23aa0da1736c
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_stains
+  theme:
+    - coffeestains
+id: productsblock
+theme: coffeestains
+region: front_page
+weight: -8
+provider: null
+plugin: products_block
+settings:
+  id: products_block
+  label: 'Products block'
+  label_display: '0'
+  provider: custom_stains
+visibility: {  }
