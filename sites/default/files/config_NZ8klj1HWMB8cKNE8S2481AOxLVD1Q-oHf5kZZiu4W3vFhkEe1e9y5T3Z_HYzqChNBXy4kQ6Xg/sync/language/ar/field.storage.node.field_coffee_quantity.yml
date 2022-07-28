@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: '250 غرام'
+    -
+      label: '500 غرام'
+    -
+      label: '1 كج'

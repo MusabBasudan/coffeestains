@@ -14,43 +14,44 @@
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</a>
 					</ul>
+					{{ drupal_block('language_block:language_interface', wrapper=false) }}
 				</div>
+			</div>
+			<!-- MAIN-MENU START -->
+			<div class="menu-toggle menu-toggle-2 hamburger hamburger--emphatic d-none d-md-block">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+			<div class="main-menu  d-none d-md-block">
+				{% set main = simplify_menu('main') %}
+				<nav>
+					<ul>
+						{% for tree in main.menu_tree %}
+							{% if not tree.submenu %}
+								<li>
+									<a href="{{ tree.url }}">{{ tree.text }}</a>
+								</li>
+							{% else %}
+								<li>
+									<a>{{ tree.text }}</a>
+									<div class="sub-menu menu-scroll">
+										<ul>
+											{% for sub in tree.submenu %}
+												<li>
+													<a href="{{ sub.url }}">{{ sub.text }}</a>
+												</li>
+											{% endfor %}
+										</ul>
+									</div>
+								</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- MAIN-MENU START -->
-<div class="menu-toggle menu-toggle-2 hamburger hamburger--emphatic d-none d-md-block">
-	<div class="hamburger-box">
-		<div class="hamburger-inner"></div>
-	</div>
-</div>
-<div class="main-menu  d-none d-md-block">
-	{% set main = simplify_menu('main') %}
-	<nav>
-		<ul>
-			{% for tree in main.menu_tree %}
-				{% if not tree.submenu %}
-					<li>
-						<a href="{{ tree.url }}">{{ tree.text }}</a>
-					</li>
-				{% else %}
-					<li>
-						<a>{{ tree.text }}</a>
-						<div class="sub-menu menu-scroll">
-							<ul>
-								{% for sub in tree.submenu %}
-									<li>
-										<a href="{{ sub.url }}">{{ sub.text }}</a>
-									</li>
-								{% endfor %}
-							</ul>
-						</div>
-					</li>
-				{% endif %}
-			{% endfor %}
-		</ul>
-	</nav>
 </div>
 <!-- MAIN-MENU END -->
 <!-- HEADER-AREA END -->

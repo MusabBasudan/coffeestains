@@ -1,0 +1,16 @@
+ul.language-switcher-language-url {
+    display: inline-block;
+    margin-inline-start: 3rem;
+}
+
+ul.language-switcher-language-url li.is-active {
+    display: none;
+}
+
+html[lang="ar"] ul.language-switcher-language-url li.ar {
+    display: none;
+}
+
+html[lang="en"] ul.language-switcher-language-url li.en {
+    display: none;
+}

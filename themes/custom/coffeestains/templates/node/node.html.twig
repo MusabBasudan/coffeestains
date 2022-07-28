@@ -75,18 +75,23 @@
     'clearfix',
   ]
 %}
-<article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+<div class="wrapper bg-dark-white">
 
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
-  </div>
+	<article{{attributes.addClass(classes)}}>
 
-</article>
+		{{ title_prefix }}
+		{% if label and not page %}
+			<h2{{title_attributes}}>
+				<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+			</h2>
+		{% endif %}
+		{{ title_suffix }}
+
+		<div{{content_attributes.addClass('content')}}>
+			{{ content }}
+		</div>
+
+	</article>
+
+</div>

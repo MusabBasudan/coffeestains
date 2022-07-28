@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the cofeestains theme.
+ */
+
+use Drupal\file\Entity\File;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\user\Entity\User;
+
+/**
+ * Process cofeestains_theme_settings form submissions.
+ */
+
+function custom_coffeestains_preprocess_links__language_block(&$variables)
+{
+
+  foreach ($variables['links'] as $i => $link) {
+    $linkLanguage = $link['link']['#options']['language'];
+    if ($linkLanguage->get('id') == 'ar')
+      $variables['links'][$i]['link']['#title'] = 'عربي';
+
+    if ($linkLanguage->get('id') == 'en')
+      $variables['links'][$i]['link']['#title'] = 'En';
+  }
+}
