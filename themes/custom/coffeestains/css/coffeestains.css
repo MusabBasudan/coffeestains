@@ -1,0 +1,30 @@
+ul.language-switcher-language-url {
+    display: inline-block;
+    margin-inline-start: 3rem;
+}
+
+ul.language-switcher-language-url li.is-active {
+    display: none;
+}
+
+ul.language-switcher-language-url {
+    margin-inline-start: 1rem;
+}
+
+html[lang="ar"] ul.language-switcher-language-url li.ar {
+    display: none;
+}
+
+html[lang="en"] ul.language-switcher-language-url li.en {
+    display: none;
+}
+
+.roaster-teaser {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: bree serif;
+    margin-bottom: 5px;
+    color: gray;
+  }
+  

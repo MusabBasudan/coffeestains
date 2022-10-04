@@ -14,7 +14,7 @@ use Drupal\user\Entity\User;
  * Process cofeestains_theme_settings form submissions.
  */
 
-function custom_coffeestains_preprocess_links__language_block(&$variables)
+function coffeestains_preprocess_links__language_block(&$variables)
 {
 
   foreach ($variables['links'] as $i => $link) {

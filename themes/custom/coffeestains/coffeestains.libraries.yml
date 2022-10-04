@@ -14,6 +14,7 @@ global-styling:
       assets/style.css: {}
       assets/css/shortcode.css: {}
       assets/css/responsive.css: {}
+      css/coffeestains.css: {}
   js:
     assets/js/vendor/jquery-3.6.0.min.js: {}
     assets/js/vendor/jquery-migrate-3.3.2.min.js: {}

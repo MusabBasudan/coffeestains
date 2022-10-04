@@ -766,19 +766,10 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
-$databases['default']['default'] = array (
-  'database' => 'coffeestains',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => '127.0.0.1',
-  'port' => '8889',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
+
 $settings['config_sync_directory'] = 'sites/default/files/config_NZ8klj1HWMB8cKNE8S2481AOxLVD1Q-oHf5kZZiu4W3vFhkEe1e9y5T3Z_HYzqChNBXy4kQ6Xg/sync';
 
 $config['system.logging']['error_level']='verbose';

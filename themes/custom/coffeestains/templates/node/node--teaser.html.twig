@@ -1,0 +1,29 @@
+<div class="tab-content">
+	<div class="tab-pane active" id="grid-view">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="single-product">
+					<div class="product-img">
+						<span class="pro-label new-label">new</span>
+						<span class="pro-price-2">{{ node.field_product_price.value }}</span>
+						{% if content.field_image is not empty %}
+							<img src="{{ content.field_image }}" alt=""/>
+						{% endif %}
+					</div>
+					<div class="product-info clearfix text-center">
+						<div class="fix">
+							<h4 class="post-title">
+								<a href="href=" {{ url }} "">{{ node.title.value }}</a>
+							</h4>
+						</div>
+						<div class="fix">
+							<h4 class="post-title">
+								<p>{{ author_full_name }}</p>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

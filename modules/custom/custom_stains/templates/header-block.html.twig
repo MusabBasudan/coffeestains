@@ -14,7 +14,6 @@
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</a>
 					</ul>
-					{{ drupal_block('language_block:language_interface', wrapper=false) }}
 				</div>
 			</div>
 			<!-- MAIN-MENU START -->
@@ -24,6 +23,7 @@
 				</div>
 			</div>
 			<div class="main-menu  d-none d-md-block">
+				{{ drupal_block('language_block:language_interface', wrapper=false) }}
 				{% set main = simplify_menu('main') %}
 				<nav>
 					<ul>

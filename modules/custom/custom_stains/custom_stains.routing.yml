@@ -1,0 +1,23 @@
+custom_portal.coffee_build:
+  path: '/products/coffee'
+  defaults:
+    _title: 'Coffee Beans'
+    _controller: '\Drupal\custom_stains\Controller\CoffeeController::build'
+  requirements:
+    _permission: 'access content'
+
+custom_portal.tools_build:
+  path: '/products/tools'
+  defaults:
+    _title: 'Coffee Tools'
+    _controller: '\Drupal\custom_stains\Controller\ToolsController::build'
+  requirements:
+    _permission: 'access content'
+
+custom_portal.front:
+  path: '/front'
+  defaults:
+    _title: 'Home'
+    _controller: '\Drupal\custom_stains\Controller\FrontController::build'
+  requirements:
+    _permission: 'access content'

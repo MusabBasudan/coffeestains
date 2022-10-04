@@ -1,0 +1,212 @@
+{% set title = fields.title.content|render|striptags|trim %}
+{% set body = fields.body.content|render|striptags|trim %}
+{% if fields.field_image.content|render|striptags|trim is not empty %}
+	{% set product_image = fields.field_image.content|render|striptags|trim  %}
+	{% set product_alt = '' %}
+{% endif %}
+{% set product_price = fields.field_product_price.content|render|striptags|trim %}
+
+
+
+<div class="product-area pt-80 pb-80 product-style-2">
+	<div class="container">
+		<div class="row">
+			<div
+				class="col-md-9 col-sm-12 col-xs-12">
+				<div class="shop-content mt-tab-30 mt-xs-30">
+					<div
+						class="product-option mb-30 clearfix">
+						<ul class="shop-tab">
+							<li>
+								<a class="active" href="#grid-view" data-bs-toggle="tab">
+									<i class="zmdi zmdi-view-module"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#list-view" data-bs-toggle="tab">
+									<i class="zmdi zmdi-view-list"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="showing text-end d-none d-md-block">
+							<p class="mb-0">Showing 01-09 of 17 Results</p>
+						</div>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane active" id="grid-view">
+							<div
+								class="row">
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product">
+										<div class="product-img">
+											<span class="pro-label new-label">new</span>
+											<span class="pro-price-2">{{ product_price }}</span>
+											<a href="single-product.html">
+											<img src="{{ product_image }}" alt="{{ product_alt }}"/>
+											</a>
+										</div>
+										<div class="product-info clearfix text-center">
+											<div class="fix">
+												<h4 class="post-title">
+													<a href="#">{{ title }}</a>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Pagination start -->
+					<div class="shop-pagination  text-center">
+						<div class="pagination">
+							<ul>
+								<li><a href="#"><i class="zmdi zmdi-long-arrow-left"></i></a></li>
+								<li><a href="#">01</a></li>
+								<li><a class="active" href="#">02</a></li>
+								<li><a href="#">03</a></li>
+								<li><a href="#">04</a></li>
+								<li><a href="#">05</a></li>
+								<li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Pagination end -->
+				</div>
+				<!-- Shop-Content End -->
+			</div>
+			<div
+				class="col-md-3 col-sm-12 col-xs-12">
+				<!-- Widget-Search start -->
+				<aside class="widget widget-search mb-30">
+					<form action="#">
+						<input type="text" placeholder="Search here..."/>
+						<button type="submit">
+							<i class="zmdi zmdi-search"></i>
+						</button>
+					</form>
+				</aside>
+				<!-- Widget-search end -->
+				<!-- Widget-Categories start -->
+				<aside class="widget widget-categories  mb-30">
+					<div class="widget-title">
+						<h4>Categories</h4>
+					</div>
+					<div id="cat-treeview" class="widget-info product-cat boxscrol2">
+						<ul>
+							<li>
+								<span>Chair</span>
+								<ul>
+									<li><a href="#">T-Shirts</a></li>
+									<li><a href="#">Striped Shirts</a></li>
+									<li><a href="#">Half Shirts</a></li>
+									<li><a href="#">Formal Shirts</a></li>
+									<li><a href="#">Bilazers</a></li>
+								</ul>
+							</li>
+							<li class="open">
+								<span>Furniture</span>
+								<ul>
+									<li><a href="#">Men Bag</a></li>
+									<li><a href="#">Shoes</a></li>
+									<li><a href="#">Watch</a></li>
+									<li><a href="#">T-shirt</a></li>
+									<li><a href="#">Shirt</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Accessories</span>
+								<ul>
+									<li><a href="#">T-Shirts</a></li>
+									<li><a href="#">Striped Shirts</a></li>
+									<li><a href="#">Half Shirts</a></li>
+									<li><a href="#">Formal Shirts</a></li>
+									<li><a href="#">Bilazers</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Top Brands</span>
+								<ul>
+									<li><a href="#">T-Shirts</a></li>
+									<li><a href="#">Striped Shirts</a></li>
+									<li><a href="#">Half Shirts</a></li>
+									<li><a href="#">Formal Shirts</a></li>
+									<li><a href="#">Bilazers</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Jewelry</span>
+								<ul>
+									<li><a href="#">T-Shirts</a></li>
+									<li><a href="#">Striped Shirts</a></li>
+									<li><a href="#">Half Shirts</a></li>
+									<li><a href="#">Formal Shirts</a></li>
+									<li><a href="#">Bilazers</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<!-- Widget-categories end -->
+				<!-- Shop-Filter start -->
+				<aside class="widget shop-filter mb-30">
+					<div class="widget-title">
+						<h4>Price</h4>
+					</div>
+					<div class="widget-info">
+						<div class="price_filter">
+							<div class="price_slider_amount">
+								<input type="submit" value="You range :"/>
+								<input type="text" id="amount" name="price" placeholder="Add Your Price"/>
+							</div>
+							<div id="slider-range"></div>
+						</div>
+					</div>
+				</aside>
+				<!-- Shop-Filter end -->
+				<!-- Widget-Color start -->
+				<aside class="widget widget-color mb-30">
+					<div class="widget-title">
+						<h4>Color</h4>
+					</div>
+					<div class="widget-info color-filter clearfix">
+						<ul>
+							<li><a href="#"><span class="color color-1"></span>LightSalmon<span class="count">12</span></a></li>
+							<li><a href="#"><span class="color color-2"></span>Dark Salmon<span class="count">20</span></a></li>
+							<li><a href="#"><span class="color color-3"></span>Tomato<span class="count">59</span></a></li>
+							<li><a class="active" href="#"><span class="color color-4"></span>Deep Sky Blue<span class="count">45</span></a></li>
+							<li><a href="#"><span class="color color-5"></span>Electric Purple<span class="count">78</span></a></li>
+							<li><a href="#"><span class="color color-6"></span>Atlantis<span class="count">10</span></a></li>
+							<li><a href="#"><span class="color color-7"></span>Deep Lilac<span class="count">15</span></a></li>
+						</ul>
+					</div>
+				</aside>
+				<!-- Widget-Color end -->
+				<!-- Widget-Size start -->
+				<aside class="widget widget-size mb-30">
+					<div class="widget-title">
+						<h4>Size</h4>
+					</div>
+					<div class="widget-info size-filter clearfix">
+						<ul>
+							<li><a href="#">M</a></li>
+							<li><a class="active" href="#">S</a></li>
+							<li><a href="#">L</a></li>
+							<li><a href="#">SL</a></li>
+							<li><a href="#">XL</a></li>
+						</ul>
+					</div>
+				</aside>
+				<!-- Widget-Size end -->
+				<!-- Widget-banner start -->
+				<aside class="widget widget-banner hidden-sm">
+					<div class="widget-info widget-banner-img">
+						<a href="#"><img src="img/banner/5.jpg" alt=""/></a>
+					</div>
+				</aside>
+				<!-- Widget-banner end -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- PRODUCT-AREA END -->

@@ -17,5 +17,14 @@ function custom_stains_theme()
     'products_block' => array(
       'variables' => array('items' => null,),
     ),
+    'featured_block' => array(
+      'variables' => array('items' => null,),
+    ),
+    'coffee_page' => array(
+      'variables' => array('items' => null,),
+    ),
+    'tools_page' => array(
+      'variables' => array('items' => null,),
+    ),
   ];
 }
