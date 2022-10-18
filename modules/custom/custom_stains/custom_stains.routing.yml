@@ -6,11 +6,20 @@ custom_portal.coffee_build:
   requirements:
     _permission: 'access content'
 
+
 custom_portal.tools_build:
   path: '/products/tools'
   defaults:
     _title: 'Coffee Tools'
     _controller: '\Drupal\custom_stains\Controller\ToolsController::build'
+  requirements:
+    _permission: 'access content'
+
+custom_portal.cups_build:
+  path: '/products/cups'
+  defaults:
+    _title: 'Coffee Cups'
+    _controller: '\Drupal\custom_stains\Controller\CupsController::build'
   requirements:
     _permission: 'access content'
 

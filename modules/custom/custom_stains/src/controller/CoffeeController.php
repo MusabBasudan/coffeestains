@@ -3,8 +3,7 @@
 namespace Drupal\custom_stains\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\node\Entity\Node;
-use Drupal\image\Entity\ImageStyle;
+use Drupal\commerce_product\Entity\ProductTypeInterface;
 
 /**
  * Returns responses for Coffee routes.
@@ -16,12 +15,14 @@ class CoffeeController extends ControllerBase
   {
     $default_langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
     $list = ['nodes' => []];
+    $product_type = \ProductType::load('my_custom_product_type');
     $nids = \Drupal::entityQuery('node')
-    ->condition('type', 'beans')
-    ->condition('langcode',$default_langcode,'=')
-    ->sort('created', 'DESC')
-    ->pager(15)
-    ->execute();
+      ->condition('type', 'beans')
+      ->condition('langcode', $default_langcode, '=')
+      ->condition('status', 1)
+      ->sort('created', 'DESC')
+      ->pager(15)
+      ->execute();
     $entity_type_manager = \Drupal::entityTypeManager();
     $node_view_builder = $entity_type_manager->getViewBuilder('node');
     $view_mode = 'teaser';
@@ -34,12 +35,13 @@ class CoffeeController extends ControllerBase
     return $list;
   }
 
-  public function build() {
+  public function build()
+  {
     return [
       'results' => [
         '#theme' => 'coffee_page',
         '#items' => $this->data(),
       ],
-    ];    
+    ];
   }
 }

@@ -1,4 +1,13 @@
 <?php
+
+/**
+ * @file
+ * Contains custom_stains.module.
+ */
+
+use Drupal\node\Entity\Node;
+
+
 function custom_stains_theme()
 {
   return [
@@ -24,6 +33,9 @@ function custom_stains_theme()
       'variables' => array('items' => null,),
     ),
     'tools_page' => array(
+      'variables' => array('items' => null,),
+    ),
+    'cups_page' => array(
       'variables' => array('items' => null,),
     ),
   ];

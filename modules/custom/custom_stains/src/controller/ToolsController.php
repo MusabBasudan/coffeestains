@@ -17,6 +17,7 @@ class ToolsController extends ControllerBase
     $nids = \Drupal::entityQuery('node')
     ->condition('type', 'tools')
     ->condition('langcode',$default_langcode,'=')
+    ->condition('status', 1)
     ->sort('created', 'DESC')
     ->pager(15)
     ->execute();

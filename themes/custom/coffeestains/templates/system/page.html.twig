@@ -100,8 +100,6 @@
 
 			{# Header #}
 			{% if page.header %}
-				{ # Language switcher # }
-				{{ drupal_block('language_block:language_interface', wrapper=false) }}
 				{% block header %}
 					<header id="sticky-menu" class="header header-2">
 						{{ page.header }}

@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\user\Entity\User;
 
-/**
+/*
  * Process cofeestains_theme_settings form submissions.
  */
 
@@ -26,3 +26,4 @@ function coffeestains_preprocess_links__language_block(&$variables)
       $variables['links'][$i]['link']['#title'] = 'En';
   }
 }
+
