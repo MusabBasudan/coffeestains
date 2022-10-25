@@ -1,0 +1,7 @@
+uuid: 85d15bbe-fab7-4045-859d-9404ea4ba0e3
+langcode: en
+status: true
+dependencies: {  }
+id: tool_type
+label: 'Tool Type'
+elementType: commerce_product_rendered_attribute

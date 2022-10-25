@@ -21,7 +21,7 @@
 				<h4 class="post-title floatleft">
 					<a href="{{ url }}">{{ node.title.value }}</a>
 				</h4>
-				<p class="floatright hidden-sm">Furniture</p>
+				<p class="floatright hidden-sm">{{ node.type.entity.label }}</p>
 			</div>
 			<div class="fix">
 				{% if content.field_product_price is not empty %}

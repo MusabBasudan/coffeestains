@@ -1,0 +1,22 @@
+uuid: 70506852-df8c-4e5e-9f37-5fb8553d4351
+langcode: en
+status: true
+dependencies: {  }
+id: vat
+label: VAT
+plugin: custom
+configuration:
+  display_inclusive: true
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 3975bb51-fb10-4616-86cf-6d99f1b755be
+      label: VAT
+      percentage: '0.15'
+  territories:
+    -
+      country_code: SA
+      administrative_area: null
+      locality: null
+      dependent_locality: null

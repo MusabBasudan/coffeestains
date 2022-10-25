@@ -6,9 +6,9 @@ dependencies:
     - field.field.node.beans.body
     - field.field.node.beans.field_coffee_notes
     - field.field.node.beans.field_coffee_quantity
-    - field.field.node.beans.field_image
+    - field.field.node.beans.field_product_image
     - field.field.node.beans.field_product_price
-    - field.field.node.beans.field_product_type
+    - field.field.node.beans.field_roaster
     - field.field.node.beans.field_tags
     - image.style.thumbnail
     - node.type.beans
@@ -51,9 +51,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
+  field_product_image:
     type: image_image
-    weight: 13
+    weight: 27
     region: content
     settings:
       progress_indicator: throbber
@@ -66,11 +66,15 @@ content:
     settings:
       placeholder: ''
     third_party_settings: {  }
-  field_product_type:
-    type: options_select
-    weight: 14
+  field_roaster:
+    type: entity_reference_autocomplete
+    weight: 26
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete

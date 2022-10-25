@@ -1,0 +1,33 @@
+uuid: 76eea4bf-bab3-4a20-ac79-85e37175ca48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roaster
+    - node.type.cups
+id: node.cups.field_roaster
+field_name: field_roaster
+entity_type: node
+bundle: cups
+label: Roaster
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        roaster: roaster
+        content_editor: '0'
+        administrator: '0'
+    include_anonymous: true
+field_type: entity_reference

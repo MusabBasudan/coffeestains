@@ -1,0 +1,14 @@
+uuid: 399bf468-4bc7-438a-a210-dcb60ce24fc8
+langcode: en
+status: true
+dependencies: {  }
+id: coffee_cups
+label: 'Coffee Cups'
+traits: {  }
+locked: false
+description: ''
+variationType: coffee_cups
+variationTypes:
+  - coffee_cups
+multipleVariations: true
+injectVariationFields: true

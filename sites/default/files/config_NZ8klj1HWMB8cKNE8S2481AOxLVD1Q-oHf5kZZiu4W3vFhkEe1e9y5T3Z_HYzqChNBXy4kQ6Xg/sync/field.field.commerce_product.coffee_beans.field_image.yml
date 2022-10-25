@@ -1,0 +1,38 @@
+uuid: b9582de2-c1d2-44a4-9df7-c8e8a69de113
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_beans
+    - field.storage.commerce_product.field_image
+  module:
+    - image
+id: commerce_product.coffee_beans.field_image
+field_name: field_image
+entity_type: commerce_product
+bundle: coffee_beans
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 1b166947-5743-4dea-b80c-019f10967ca1
+    alt: ''
+    title: ''
+    width: 512
+    height: 512
+field_type: image

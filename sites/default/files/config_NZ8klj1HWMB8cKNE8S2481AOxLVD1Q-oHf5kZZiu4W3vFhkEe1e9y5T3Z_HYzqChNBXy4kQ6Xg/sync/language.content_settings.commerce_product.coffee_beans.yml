@@ -1,0 +1,18 @@
+uuid: ec696f78-1d16-4a20-8339-64d87506fc7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_beans
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.coffee_beans
+target_entity_type_id: commerce_product
+target_bundle: coffee_beans
+default_langcode: site_default
+language_alterable: true

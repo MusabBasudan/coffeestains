@@ -1,0 +1,30 @@
+uuid: e663d275-2403-470c-905c-1abe3b72fa41
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_store
+    - file
+    - image
+id: commerce_store.field_store_image
+field_name: field_store_image
+entity_type: commerce_store
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: f29ded36-facf-4c6e-9d20-38bf8eb8f3f2
+    alt: ''
+    title: ''
+    width: 3963
+    height: 5462
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

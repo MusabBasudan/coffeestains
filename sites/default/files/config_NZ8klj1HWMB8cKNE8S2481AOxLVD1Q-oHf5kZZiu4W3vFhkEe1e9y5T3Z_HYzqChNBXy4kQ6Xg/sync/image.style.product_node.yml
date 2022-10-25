@@ -1,0 +1,15 @@
+uuid: 94e979e5-4d16-4ac0-ad57-c7c4105f4352
+langcode: en
+status: true
+dependencies: {  }
+name: product_node
+label: 'Product node'
+effects:
+  8228fba7-be18-4434-b40b-d89ad321197e:
+    uuid: 8228fba7-be18-4434-b40b-d89ad321197e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 450
+      anchor: center-center

@@ -1,0 +1,29 @@
+uuid: 45eeb944-9f4c-4fe3-8d95-e713d2818c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_tools
+    - field.storage.commerce_product.field_tool_type
+    - taxonomy.vocabulary.tool_type
+id: commerce_product.coffee_tools.field_tool_type
+field_name: field_tool_type
+entity_type: commerce_product
+bundle: coffee_tools
+label: 'Tool Type'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tool_type: tool_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

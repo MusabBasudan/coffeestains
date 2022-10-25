@@ -6,7 +6,7 @@
 					<div class="shop-content mt-tab-30 mt-xs-30">
 						<div class="product-option mb-30 clearfix">
 							<div class="showing  d-none d-md-block">
-								<p class="mb-0">Showing 01-09 of 17 Results</p>
+								<p class="mb-0">{{page.breadcumbs}}</p>
 							</div>
 						</div>
 					</div>
@@ -14,7 +14,7 @@
 				<div class="tab-content">
 					<div class="tab-pane active" id="grid-view">
 						<div class="row">
-							{{ items }}
+							{{ drupal_view('commerce_products','block_1')}}
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,23 @@
+uuid: 7bde5661-1424-446d-97df-c3ddeae58c95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.cups
+  module:
+    - text
+id: node.cups.body
+field_name: body
+entity_type: node
+bundle: cups
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

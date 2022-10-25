@@ -1,0 +1,10 @@
+uuid: 727758da-8881-4f2c-9688-efd82a9c3716
+langcode: en
+status: true
+dependencies: {  }
+id: coffee_cups
+label: 'Coffee Cups'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

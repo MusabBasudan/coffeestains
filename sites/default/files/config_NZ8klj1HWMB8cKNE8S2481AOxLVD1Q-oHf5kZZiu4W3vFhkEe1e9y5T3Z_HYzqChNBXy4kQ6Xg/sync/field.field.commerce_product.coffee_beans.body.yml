@@ -1,0 +1,23 @@
+uuid: 2cc4f2f4-657f-4fd8-bf9c-fbc5a1c98eff
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_beans
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.coffee_beans.body
+field_name: body
+entity_type: commerce_product
+bundle: coffee_beans
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

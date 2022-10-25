@@ -1,0 +1,38 @@
+uuid: b2ff5957-d5bf-48be-88f9-fcc3ab2556ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_tools
+    - field.storage.commerce_product.field_image
+  module:
+    - image
+id: commerce_product.coffee_tools.field_image
+field_name: field_image
+entity_type: commerce_product
+bundle: coffee_tools
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: fbcff6e3-790f-403e-86f1-b6e3c5eb4280
+    alt: ''
+    title: ''
+    width: 512
+    height: 512
+field_type: image

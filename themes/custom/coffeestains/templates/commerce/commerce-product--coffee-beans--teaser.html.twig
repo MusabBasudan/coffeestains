@@ -1,0 +1,36 @@
+<div class="single-product">
+	<div class="product-img">
+		<span class="pro-label new-label">new</span>
+		<a href="{{ product_url }}">
+			{% if product.field_image is not empty %}
+				{{ product.field_image }}
+			{% endif %}
+		</a>
+		<div class="product-action clearfix">
+			<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Wishlist">
+				<i class="zmdi zmdi-favorite-outline"></i>
+			</a>
+			<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart">
+				<i class="zmdi zmdi-shopping-cart-plus"></i>
+			</a>
+		</div>
+	</div>
+	<div class="product-info clearfix">
+		<div class="fix">
+			<h4 class="post-title floatleft">
+				<a href="{{ product_url }}">{{ product.title }}</a>
+			</h4>
+			<p class="floatright hidden-sm">{{ product.type }}</p>
+		</div>
+		<div class="fix">
+			{% if product.variation_price is not empty %}
+				<span class="pro-price floatleft">{{ product.variation_price }}</span>
+			{% endif %}
+			<h4 class="roaster-teaser floatright">
+				{% if product.stores is not empty %}
+					{{ product.stores }}
+				{% endif %}
+			</h4>
+		</div>
+	</div>
+</div>

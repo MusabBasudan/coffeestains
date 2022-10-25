@@ -1,0 +1,18 @@
+uuid: e03fe7ea-123e-4d9e-9c3b-4656a9a6207f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.quantity
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product_attribute_value.quantity
+target_entity_type_id: commerce_product_attribute_value
+target_bundle: quantity
+default_langcode: site_default
+language_alterable: false

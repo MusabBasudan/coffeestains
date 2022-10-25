@@ -1,0 +1,14 @@
+uuid: 49f47627-b2ef-4157-89f4-17d482d39416
+langcode: en
+status: true
+dependencies: {  }
+id: coffee_beans
+label: 'Coffee Beans'
+traits: {  }
+locked: false
+description: ''
+variationType: coffee_beans
+variationTypes:
+  - coffee_beans
+multipleVariations: true
+injectVariationFields: true

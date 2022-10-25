@@ -1,0 +1,7 @@
+uuid: 9bdca8f1-5ae5-4e09-a53d-0a9e444caad0
+langcode: en
+status: true
+dependencies: {  }
+id: size
+label: 'Cup Size'
+elementType: radios

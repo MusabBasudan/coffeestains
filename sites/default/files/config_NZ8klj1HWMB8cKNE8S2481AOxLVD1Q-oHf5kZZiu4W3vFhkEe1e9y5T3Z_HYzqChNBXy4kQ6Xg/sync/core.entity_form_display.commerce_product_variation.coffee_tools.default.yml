@@ -1,0 +1,67 @@
+uuid: 12b645da-7db4-4446-ac19-1d0b469cf44c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.coffee_tools
+    - field.field.commerce_product_variation.coffee_tools.field_many_cups
+    - field.field.commerce_product_variation.coffee_tools.field_much_liquid
+  module:
+    - commerce_price
+id: commerce_product_variation.coffee_tools.default
+targetEntityType: commerce_product_variation
+bundle: coffee_tools
+mode: default
+content:
+  field_many_cups:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_much_liquid:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  title: true
+  uid: true

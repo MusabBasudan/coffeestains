@@ -1,0 +1,23 @@
+uuid: 7cdfdf05-a813-466d-965b-7fcd211fc9b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.coffee_tools
+    - field.storage.commerce_product_variation.field_much_liquid
+id: commerce_product_variation.coffee_tools.field_much_liquid
+field_name: field_much_liquid
+entity_type: commerce_product_variation
+bundle: coffee_tools
+label: 'How much coffee?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Oz
+field_type: integer

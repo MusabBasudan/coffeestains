@@ -1,0 +1,8 @@
+uuid: 6293ea82-f2f5-4f64-8fee-5087e959a741
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tool Type'
+vid: tool_type
+description: ''
+weight: 0

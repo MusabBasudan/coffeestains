@@ -1,0 +1,17 @@
+uuid: dd9dd793-a4f2-42b4-bc2a-c834bd5d6f3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Tools
+type: tools
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

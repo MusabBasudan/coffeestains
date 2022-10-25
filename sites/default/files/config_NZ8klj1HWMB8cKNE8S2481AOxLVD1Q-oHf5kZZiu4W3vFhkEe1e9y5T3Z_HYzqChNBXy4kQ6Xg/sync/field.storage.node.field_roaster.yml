@@ -1,0 +1,20 @@
+uuid: ee3873a8-1c01-46b5-9cc8-d7fb84214032
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_roaster
+field_name: field_roaster
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

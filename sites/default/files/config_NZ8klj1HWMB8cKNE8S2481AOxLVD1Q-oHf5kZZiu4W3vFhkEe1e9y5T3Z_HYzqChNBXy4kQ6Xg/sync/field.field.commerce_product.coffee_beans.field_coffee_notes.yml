@@ -1,0 +1,21 @@
+uuid: 296ead2f-c835-437b-bef5-2178fa45c839
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_beans
+    - field.storage.commerce_product.field_coffee_notes
+  module:
+    - text
+id: commerce_product.coffee_beans.field_coffee_notes
+field_name: field_coffee_notes
+entity_type: commerce_product
+bundle: coffee_beans
+label: 'Coffee Notes'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

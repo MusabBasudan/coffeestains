@@ -6,19 +6,15 @@ dependencies:
     - field.storage.node.field_tags
     - node.type.beans
     - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:d740ac9a-ce2f-4533-9866-2c958db3316c'
 id: node.beans.field_tags
 field_name: field_tags
 entity_type: node
 bundle: beans
 label: Tags
 description: ''
-required: true
+required: false
 translatable: true
-default_value:
-  -
-    target_uuid: d740ac9a-ce2f-4533-9866-2c958db3316c
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

@@ -1,0 +1,52 @@
+uuid: b49da872-a19c-4b8e-be38-2e0807b8f746
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_beans
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.coffee_beans.body
+    - field.field.commerce_product.coffee_beans.field_coffee_notes
+    - field.field.commerce_product.coffee_beans.field_image
+    - image.style.teaser
+  module:
+    - image
+id: commerce_product.coffee_beans.teaser
+targetEntityType: commerce_product
+bundle: coffee_beans
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: teaser
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  stores:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  created: true
+  field_coffee_notes: true
+  langcode: true
+  uid: true
+  variations: true

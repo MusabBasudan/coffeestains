@@ -1,0 +1,21 @@
+uuid: 20bd94a5-e077-4508-8791-5989ca4b03c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cup_size
+    - node.type.cups
+  module:
+    - options
+id: node.cups.field_cup_size
+field_name: field_cup_size
+entity_type: node
+bundle: cups
+label: 'Cup Size'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,14 @@
+uuid: 77092289-a9df-45bc-a5b9-b6f446b6356f
+langcode: en
+status: true
+dependencies: {  }
+id: coffee_tools
+label: 'Coffee Tools'
+traits: {  }
+locked: false
+description: ''
+variationType: coffee_tools
+variationTypes:
+  - coffee_tools
+multipleVariations: true
+injectVariationFields: true

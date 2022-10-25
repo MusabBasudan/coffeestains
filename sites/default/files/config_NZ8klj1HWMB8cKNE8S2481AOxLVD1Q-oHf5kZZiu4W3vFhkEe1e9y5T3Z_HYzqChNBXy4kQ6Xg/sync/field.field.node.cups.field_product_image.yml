@@ -1,0 +1,38 @@
+uuid: 41cb0ee0-bd71-4c35-8bb9-edf397d68661
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_image
+    - node.type.cups
+  module:
+    - image
+id: node.cups.field_product_image
+field_name: field_product_image
+entity_type: node
+bundle: cups
+label: 'Product Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 6ddb8921-8db3-4775-90ae-fd1d2253b444
+    alt: ''
+    title: ''
+    width: 512
+    height: 512
+field_type: image

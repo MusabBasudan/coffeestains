@@ -1,0 +1,79 @@
+uuid: bee857a7-4e5a-43f2-ab54-1a289228f3b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tools.body
+    - field.field.node.tools.field_product_image
+    - field.field.node.tools.field_product_price
+    - field.field.node.tools.field_roaster
+    - field.field.node.tools.field_tags
+    - field.field.node.tools.field_tool_type
+    - image.style.product_node
+    - node.type.tools
+  module:
+    - image
+    - text
+    - user
+id: node.tools.default
+targetEntityType: node
+bundle: tools
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_product_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: product_node
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_product_price:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_roaster:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_tool_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

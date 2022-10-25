@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.1",
+        "drupal/better_exposed_filters": "^6.0",
         "drupal/bootstrap": "^3.24",
         "drupal/commerce": "^2.31",
         "drupal/core-composer-scaffold": "^9.3",

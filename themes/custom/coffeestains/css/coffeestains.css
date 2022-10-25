@@ -26,5 +26,114 @@ html[lang="en"] ul.language-switcher-language-url li.en {
     font-family: bree serif;
     margin-bottom: 5px;
     color: gray;
-  }
-  
+}
+
+.shop-list .product-action {
+    float: left;
+    margin: 0 0 0 20px;
+    width: 30%;
+    height: 40px;
+}
+
+.shop-list .product-action li:hover {
+    display: none;
+}
+
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.zmdi-favorite-outline,
+.zmdi-shopping-cart-plus {
+    border: none;
+    color: #666666;
+    background: none;
+    float: center;
+    margin-top: 10px;
+}
+
+.cart-plus-minus-box label {
+    display: none;
+}
+
+.cart-plus-minus-box input {
+    background: none;
+    float: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    border: none;
+}
+
+
+.custom-select {
+    appearance: none;
+    background: none;
+    border: none;
+    color: #999;
+    height: auto;
+    padding: 0 20px;
+    text-transform: capitalize;
+    width: 100%;
+    outline: none;
+}
+
+.custom-select label {
+    display: none;
+}
+
+.select-wrapper:after {
+    display: none !important;
+}
+
+form.views-exposed-form .form-inline {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    align-items: end;
+}
+
+form.views-exposed-form .form-inline .form-item {
+    width: 100%;
+}
+
+form.views-exposed-form .form-inline .form-item label {
+    display: none;
+}
+
+form.views-exposed-form .form-inline .form-select {
+    background: none;
+    border: none;
+}
+
+form.views-exposed-form .form-inline .form-select ul {
+    display: flex !important;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+form.views-exposed-form .form-inline .form-select ul li a {
+    font-size: 22px;
+    color: #999;
+}
+
+.bef-links-use-ajax ul li {
+    min-width: 200px;
+    position: relative;
+}
+
+form.commerce-order-item-add-to-cart-form span.input-group-addon {
+    display: none;
+}
+
+span.icon.glyphicon.glyphicon-refresh.ajax-progress.ajax-progress-throbber {
+    display: none;
+}

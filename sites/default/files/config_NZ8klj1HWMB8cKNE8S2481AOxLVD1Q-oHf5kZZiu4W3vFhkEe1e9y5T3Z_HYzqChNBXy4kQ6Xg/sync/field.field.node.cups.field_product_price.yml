@@ -1,0 +1,23 @@
+uuid: ab7b6a48-d545-46c8-b92d-5b6d8ea67b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_price
+    - node.type.cups
+id: node.cups.field_product_price
+field_name: field_product_price
+entity_type: node
+bundle: cups
+label: 'Product Price'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: SAR
+field_type: decimal

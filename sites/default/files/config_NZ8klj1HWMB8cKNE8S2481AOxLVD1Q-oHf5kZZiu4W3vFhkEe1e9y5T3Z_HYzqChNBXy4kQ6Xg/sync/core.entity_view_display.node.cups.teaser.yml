@@ -1,0 +1,70 @@
+uuid: 624a5b0b-e569-4d36-a349-5dcb09c9549b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cups.body
+    - field.field.node.cups.field_cup_size
+    - field.field.node.cups.field_product_image
+    - field.field.node.cups.field_product_price
+    - field.field.node.cups.field_roaster
+    - field.field.node.cups.field_tags
+    - image.style.teaser
+    - node.type.cups
+  module:
+    - image
+    - text
+    - user
+id: node.cups.teaser
+targetEntityType: node
+bundle: cups
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_product_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: teaser
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_product_price:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_roaster:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_cup_size: true
+  field_tags: true
+  langcode: true

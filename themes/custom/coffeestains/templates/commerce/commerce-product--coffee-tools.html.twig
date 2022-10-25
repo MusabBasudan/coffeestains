@@ -1,0 +1,36 @@
+<article{{attributes}}>
+	<div class="product-area single-pro-area pt-80 pb-80 product-style-2">
+		<div class="container">
+			<div class="row shop-list single-pro-info no-sidebar">
+				<div class="col-lg-12">
+					<div class="single-product clearfix">
+						<div class="single-big-photo slick-initialized">
+							<img src="{{ product.field_image.0 }}" alt=""/>
+						</div>
+						<div class="product-info">
+							<div class="fix">
+								<h4 class="post-title floatleft">{{ product.title }}</h4>
+							</div>
+							<div class="fix mb-20">
+								<span class="pro-price">{{ product.variation_price }}</span>
+							</div>
+							<div class="product-description">
+								<p>{{ product.body }}</p>
+								<p>{{ product.field_coffee_notes }}</p>
+							</div>
+							<div class="product-description">
+								<p>{{ product.stores }}
+								</p>
+							</div>
+							<div class="size-filter single-pro-size mb-35 clearfix">
+								<span class="color-title text-capitalize">{{'Size'|t}}</span>
+								{{ product|without('title', 'body', 'variation_attributes', 'variation_price',
+									'field_coffee_notes', 'stores', 'field_image') }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

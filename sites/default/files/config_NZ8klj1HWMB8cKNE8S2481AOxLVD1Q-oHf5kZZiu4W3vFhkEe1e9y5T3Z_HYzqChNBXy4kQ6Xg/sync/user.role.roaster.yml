@@ -1,9 +1,26 @@
 uuid: a04acb1e-90f0-46ac-a1d7-2b0e76b91b89
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.beans
+    - node.type.cups
+    - node.type.tools
+  module:
+    - node
+    - path
 id: roaster
 label: Roaster
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'administer url aliases'
+  - 'create beans content'
+  - 'create cups content'
+  - 'create tools content'
+  - 'delete own beans content'
+  - 'delete own cups content'
+  - 'delete own tools content'
+  - 'edit own beans content'
+  - 'edit own cups content'
+  - 'edit own tools content'

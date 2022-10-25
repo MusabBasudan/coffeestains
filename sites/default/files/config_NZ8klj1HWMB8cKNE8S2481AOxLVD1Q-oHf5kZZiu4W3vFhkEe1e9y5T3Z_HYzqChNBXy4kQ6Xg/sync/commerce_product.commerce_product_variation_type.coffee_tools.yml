@@ -1,0 +1,10 @@
+uuid: e173536a-70ef-46c8-88bf-2a140741f6f5
+langcode: en
+status: true
+dependencies: {  }
+id: coffee_tools
+label: 'Coffee Tools'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: null

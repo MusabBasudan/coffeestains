@@ -1,0 +1,30 @@
+uuid: 1c0dfd48-899a-4a5e-a189-f71434d2fbc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_cup_size
+field_name: field_cup_size
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 150
+      label: 'Flat white'
+    -
+      value: 250
+      label: Cappuccino
+    -
+      value: 300
+      label: Latte
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

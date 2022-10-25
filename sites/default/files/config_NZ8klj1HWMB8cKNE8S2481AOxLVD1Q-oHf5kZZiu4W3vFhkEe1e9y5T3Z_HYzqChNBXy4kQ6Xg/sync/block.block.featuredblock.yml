@@ -1,0 +1,20 @@
+uuid: 3b0a79f6-93e6-492c-9494-1d010f20f7fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_stains
+  theme:
+    - coffeestains
+id: featuredblock
+theme: coffeestains
+region: front_page
+weight: 0
+provider: null
+plugin: featured_block
+settings:
+  id: featured_block
+  label: 'Featured Block'
+  label_display: '0'
+  provider: custom_stains
+visibility: {  }

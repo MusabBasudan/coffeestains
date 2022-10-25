@@ -1,0 +1,24 @@
+<div class="product-area pt-80 pb-80 product-style-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="shop-content mt-tab-30 mt-xs-30">
+					<div class="product-option mb-30 clearfix">
+						<div class="showing  d-none d-md-block">
+							<p class="mb-0">{{ page.breadcrumbs }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="tab-content">
+					<div class="tab-pane active" id="grid-view">
+						{% for item in items %}
+								<div {{ item.attributes }}>{{ item.content }}</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

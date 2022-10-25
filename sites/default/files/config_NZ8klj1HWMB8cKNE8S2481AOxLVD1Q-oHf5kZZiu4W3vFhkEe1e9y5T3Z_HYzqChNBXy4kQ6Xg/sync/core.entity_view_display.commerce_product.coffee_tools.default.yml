@@ -1,0 +1,69 @@
+uuid: dcb904b3-496c-4dc2-b937-316f65888d94
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.coffee_tools
+    - field.field.commerce_product.coffee_tools.body
+    - field.field.commerce_product.coffee_tools.field_image
+    - field.field.commerce_product.coffee_tools.field_tool_type
+  module:
+    - commerce_product
+    - image
+    - text
+id: commerce_product.coffee_tools.default
+targetEntityType: commerce_product
+bundle: coffee_tools
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_tool_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  stores:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  created: true
+  langcode: true
+  uid: true

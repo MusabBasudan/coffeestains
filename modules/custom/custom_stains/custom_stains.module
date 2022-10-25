@@ -6,6 +6,7 @@
  */
 
 use Drupal\node\Entity\Node;
+use \Drupal\Core\Form\FormStateInterface;
 
 
 function custom_stains_theme()
@@ -39,4 +40,18 @@ function custom_stains_theme()
       'variables' => array('items' => null,),
     ),
   ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_stains_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+  if (strpos($form_id, 'commerce_order_item_add_to_cart_form_commerce_product') === 0) {
+    $form['purchased_entity']['widget']['#title'] = t('Quantity');
+    $form['purchased_entity']['#attributes']['class'][] = 'custom-select';
+    $form['quantity']['#attributes']['class'][] = 'cart-plus-minus-box';
+    $form['actions']['submit']['#value'] = '';
+    $form['actions']['submit']['#attributes']['class'][] = 'zmdi zmdi-shopping-cart-plus';
+  }
 }

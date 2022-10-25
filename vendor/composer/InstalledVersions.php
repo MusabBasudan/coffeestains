@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '0bbe43c704de325c7cbfcac9e700f1a4e334454d',
+    'reference' => '44b01af04d90b773ede2dcf904a0fc4e99f3e54f',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -319,6 +319,15 @@ private static $installed = array (
       array (
         0 => '9.4.1',
       ),
+    ),
+    'drupal/better_exposed_filters' => 
+    array (
+      'pretty_version' => '6.0.2',
+      'version' => '6.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6.0.2',
     ),
     'drupal/big_pipe' => 
     array (
@@ -839,6 +848,42 @@ private static $installed = array (
         0 => '9.4.1',
       ),
     ),
+    'drupal/jquery_ui' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.4',
+    ),
+    'drupal/jquery_ui_datepicker' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.4',
+    ),
+    'drupal/jquery_ui_slider' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
+    ),
+    'drupal/jquery_ui_touch_punch' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1.1.0',
+    ),
     'drupal/jsonapi' => 
     array (
       'replaced' => 
@@ -874,7 +919,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '0bbe43c704de325c7cbfcac9e700f1a4e334454d',
+      'reference' => '44b01af04d90b773ede2dcf904a0fc4e99f3e54f',
     ),
     'drupal/link' => 
     array (
@@ -1411,6 +1456,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b14fbe2ddb0b9f94f5b24cf08783d599f776fff0',
+    ),
+    'politsin/jquery-ui-touch-punch' => 
+    array (
+      'pretty_version' => '1.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2fe375e05821e267f0f3c0e063197f5c406896dd',
     ),
     'psr/cache' => 
     array (

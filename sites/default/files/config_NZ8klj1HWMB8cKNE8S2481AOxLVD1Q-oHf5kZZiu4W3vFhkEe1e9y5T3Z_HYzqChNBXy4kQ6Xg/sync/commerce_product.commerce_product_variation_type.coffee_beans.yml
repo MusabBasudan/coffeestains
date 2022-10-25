@@ -1,0 +1,10 @@
+uuid: bd9f35eb-cd2d-4395-aba9-0afb8ec842e2
+langcode: en
+status: true
+dependencies: {  }
+id: coffee_beans
+label: 'Coffee Beans'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

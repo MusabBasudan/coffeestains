@@ -27,3 +27,17 @@ function coffeestains_preprocess_links__language_block(&$variables)
   }
 }
 
+/**
+ * Implements hook_theme().
+ */
+function coffeestains_theme($existing, $type, $theme, $path)
+{
+
+  return [
+    'commerce_order_item_add_to_cart_form' => array(
+      'render element' => 'form',
+      'template' => 'commerce-order-item-add-to-cart-form',
+    ),
+  ];
+}
+

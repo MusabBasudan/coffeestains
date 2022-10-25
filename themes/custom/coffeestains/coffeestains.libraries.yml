@@ -16,9 +16,9 @@ global-styling:
       assets/css/responsive.css: {}
       css/coffeestains.css: {}
   js:
-    assets/js/vendor/jquery-3.6.0.min.js: {}
-    assets/js/vendor/jquery-migrate-3.3.2.min.js: {}
-    assets/js/bootstrap.bundle.min.js: {}
+    # assets/js/vendor/jquery-3.6.0.min.js: {}
+    # assets/js/vendor/jquery-migrate-3.3.2.min.js: {}
+    # assets/js/bootstrap.bundle.min.js: {}
     assets/js/jquery.meanmenu.js: {}
     assets/js/slick.min.js: {}
     assets/js/jquery.treeview.js: {}
@@ -31,3 +31,11 @@ global-styling:
     assets/js/wow.min.js: {}
     assets/js/plugins.js: {}
     assets/js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.ajax
+    - core/drupal.progress
+    - core/drupalSettings
+    - core/once
+  

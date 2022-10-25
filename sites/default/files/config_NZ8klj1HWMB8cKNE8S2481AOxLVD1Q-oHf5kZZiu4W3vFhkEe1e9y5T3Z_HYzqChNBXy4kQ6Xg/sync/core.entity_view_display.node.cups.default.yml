@@ -1,0 +1,79 @@
+uuid: 0aba789e-aa7f-4c68-9a14-13e3f18708bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cups.body
+    - field.field.node.cups.field_cup_size
+    - field.field.node.cups.field_product_image
+    - field.field.node.cups.field_product_price
+    - field.field.node.cups.field_roaster
+    - field.field.node.cups.field_tags
+    - image.style.product_node
+    - node.type.cups
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.cups.default
+targetEntityType: node
+bundle: cups
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_cup_size:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_product_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: product_node
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_product_price:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_roaster:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
