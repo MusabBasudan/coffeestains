@@ -9,9 +9,23 @@
 			<div class="col-md-4 col-5">
 				<div class="mini-cart text-end">
 					<ul>
-						<a class="cart-icon" href="#">
-							{{drupal_view('commerce_cart_block')}}
-						</a>
+						{{ drupal_block('language_block:language_interface', wrapper=false) }}
+						{% if not drupal_config('custom_futurex.settings', 'hide_login') and not logged_in %}
+							<a class="cart-icon" href="{{ drupal_url('user/login') }}" title="My-Account">
+								<i class="fa fa-user"></i>
+							</a>
+						{% endif %}
+						{% if logged_in %}
+							<a class="cart-icon" href="/cart">
+								<i class="fa fa-cart-shopping">{{drupal_view('commerce_cart_block')}}</i>
+							</a>
+							<a class="cart-icon" href="{{ drupal_url('user/'~ current_uid) }}" title="My-Account">
+								<i class="fa fa-user"></i>
+							</a>
+							<a class="cart-icon" href="/user/logout" title="Logout">
+								<i class="fa fa-right-from-bracket"></i>
+							</a>
+						{% endif %}
 					</ul>
 				</div>
 			</div>
@@ -21,7 +35,6 @@
 				</div>
 			</div>
 			<div class="main-menu  d-none d-md-block">
-				{{ drupal_block('language_block:language_interface', wrapper=false) }}
 				{% set main = simplify_menu('main') %}
 				<nav>
 					<ul>

@@ -1,24 +1,13 @@
-{% if items is not empty %}
-	<div class="product-area pt-80 pb-80 product-style-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="shop-content mt-tab-30 mt-xs-30">
-						<div class="product-option mb-30 clearfix">
-							<div class="showing  d-none d-md-block">
-								<p class="mb-0">Showing 01-09 of 17 Results</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-content">
-					<div class="tab-pane active" id="grid-view">
-						<div class="row">
-							{{ items }}
-						</div>
+<div class="product-area pb-80 product-style-2">
+	<div class="container">
+		<div class="row">
+			<div class="tab-content">
+				<div class="tab-pane active" id="grid-view">
+					<div class="row">
+						{{ drupal_view('commerce_products','tools_block')}}
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-{% endif %}
+</div>

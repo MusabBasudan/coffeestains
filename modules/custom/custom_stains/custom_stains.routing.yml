@@ -1,13 +1,13 @@
-custom_portal.coffee_build:
-  path: '/products/coffee'
+custom_stains.coffee_build:
+  path: '/products/beans'
   defaults:
     _title: 'Coffee Beans'
-    _controller: '\Drupal\custom_stains\Controller\CoffeeController::build'
+    _controller: '\Drupal\custom_stains\Controller\BeansController::build'
   requirements:
     _permission: 'access content'
 
 
-custom_portal.tools_build:
+custom_stains.tools_build:
   path: '/products/tools'
   defaults:
     _title: 'Coffee Tools'
@@ -15,7 +15,7 @@ custom_portal.tools_build:
   requirements:
     _permission: 'access content'
 
-custom_portal.cups_build:
+custom_stains.cups_build:
   path: '/products/cups'
   defaults:
     _title: 'Coffee Cups'
@@ -23,10 +23,47 @@ custom_portal.cups_build:
   requirements:
     _permission: 'access content'
 
-custom_portal.front:
+custom_stains.front:
   path: '/front'
   defaults:
     _title: 'Home'
     _controller: '\Drupal\custom_stains\Controller\FrontController::build'
   requirements:
     _permission: 'access content'
+
+custom_stains.user_view_profile:
+  path: '/profile/{user}/view'
+  defaults:
+    _entity_form: user.edit_account
+    _title: 'User Profile'
+  requirements:
+    _custom_access: '\Drupal\custom_stains\Controller\UserEditProfileController::access'
+  options:
+    parameters:
+      user:
+        type: entity:user
+
+custom_stains.user_edit_profile:
+  path: '/profile/{user}/settings'
+  defaults:
+    _entity_form: user.edit_account
+    _title: 'Account settings'
+  requirements:
+    _custom_access: '\Drupal\custom_stains\Controller\UserEditProfileController::access'
+  options:
+    parameters:
+      user:
+        type: entity:user
+
+
+custom_stains.super_role_edit_any_profile:
+  path: '/profile/{user}/edit-user'
+  defaults:
+    _entity_form: user.edit_account
+    _title: 'Account settings'
+  requirements:
+    _custom_access: '\Drupal\custom_stains\Controller\UserEditProfileController::accessEdit'
+  options:
+    parameters:
+      user:
+        type: entity:user

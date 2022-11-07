@@ -38,6 +38,18 @@ function coffeestains_theme($existing, $type, $theme, $path)
       'render element' => 'form',
       'template' => 'commerce-order-item-add-to-cart-form',
     ),
+    'user_login_form' => array(
+      'render element' => 'form',
+      'template' => 'user-login-form',
+    ),
+    'user_register_form' => array(
+      'render element' => 'form',
+      'template' => 'user-register-form',
+    ),
+      'user_pass' => array(
+      'render element' => 'form',
+      'template' => 'form/user-password-form',
+    ),
   ];
 }
 

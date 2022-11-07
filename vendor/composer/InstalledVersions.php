@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '44b01af04d90b773ede2dcf904a0fc4e99f3e54f',
+    'reference' => 'ffcd6652d92e09a643961fac04ba6b80c556b48e',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -335,6 +335,15 @@ private static $installed = array (
       array (
         0 => '9.4.1',
       ),
+    ),
+    'drupal/blazy' => 
+    array (
+      'pretty_version' => '2.13.0',
+      'version' => '2.13.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.13',
     ),
     'drupal/block' => 
     array (
@@ -790,6 +799,15 @@ private static $installed = array (
         0 => '9.4.1',
       ),
     ),
+    'drupal/fontawesome' => 
+    array (
+      'pretty_version' => '2.24.0',
+      'version' => '2.24.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.24',
+    ),
     'drupal/forum' => 
     array (
       'replaced' => 
@@ -919,7 +937,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '44b01af04d90b773ede2dcf904a0fc4e99f3e54f',
+      'reference' => 'ffcd6652d92e09a643961fac04ba6b80c556b48e',
     ),
     'drupal/link' => 
     array (
@@ -1054,6 +1072,15 @@ private static $installed = array (
         0 => '9.4.1',
       ),
     ),
+    'drupal/phone_international' => 
+    array (
+      'pretty_version' => '3.2.1',
+      'version' => '3.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.2.1',
+    ),
     'drupal/profile' => 
     array (
       'pretty_version' => '1.7.0',
@@ -1134,6 +1161,24 @@ private static $installed = array (
       array (
       ),
       'reference' => '8.x-2.1',
+    ),
+    'drupal/slick' => 
+    array (
+      'pretty_version' => '2.6.0',
+      'version' => '2.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.6',
+    ),
+    'drupal/slick_views' => 
+    array (
+      'pretty_version' => '2.6.0',
+      'version' => '2.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.6',
     ),
     'drupal/sqlite' => 
     array (
@@ -1314,6 +1359,24 @@ private static $installed = array (
       array (
       ),
       'reference' => '196bacc76e7a72a63d0e1220926dbb190272db97',
+    ),
+    'giggsey/libphonenumber-for-php' => 
+    array (
+      'pretty_version' => '8.12.57',
+      'version' => '8.12.57.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '033a7285fd1102c13c4415e300734b7ce7ca0ae0',
+    ),
+    'giggsey/locale' => 
+    array (
+      'pretty_version' => '2.3',
+      'version' => '2.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5f035523740be40d40ac768a123c9bcc1ae12f56',
     ),
     'grasmash/expander' => 
     array (

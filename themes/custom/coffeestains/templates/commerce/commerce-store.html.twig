@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="about-photo">
-						<img src="{{ store.field_store_image|raw }}" alt=""/>
+						<img src="{{ file_url(store.field_store_image[0]['#item'].entity.fileuri) }}" alt=""/>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -23,7 +23,7 @@
 		<div class="shop-content">
 			<div class="row">
 				<div class="col-md-12">
-					{{ drupal_view('commerce_products','block_1')}}
+					{{ drupal_view('commerce_products','store_block')}}
 				</div>
 			</div>
 		</div>

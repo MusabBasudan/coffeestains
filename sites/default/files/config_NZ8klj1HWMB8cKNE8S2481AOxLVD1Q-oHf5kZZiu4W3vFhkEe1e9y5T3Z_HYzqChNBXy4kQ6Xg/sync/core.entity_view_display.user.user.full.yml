@@ -1,0 +1,25 @@
+uuid: e7cf10d4-769d-40cf-b5c6-a045302037cb
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.user_picture
+  module:
+    - user
+_core:
+  default_config_hash: E1qmUI2SlozLlJ308jfMMFKT67l1p6PywE2LTRbeYS4
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content: {  }
+hidden:
+  commerce_remote_id: true
+  customer_profiles: true
+  field_phone_number: true
+  langcode: true
+  member_for: true
+  user_picture: true

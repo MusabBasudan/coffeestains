@@ -11,15 +11,10 @@ base theme: bootstrap
 regions:
   navigation: 'Navigation'
   header: 'Top Bar'
+  breadcrumbs: 'Breadcrumbs'
   front_page: 'Front Page'
   content: 'Content'
   sidebar_first: 'Primary Sidebar'
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-
-libraries-override:
-  commerce_cart/cart_block:
-    css:
-      layout:
-        css/commerce_cart.layout.css: css/commerce_cart.layout.css

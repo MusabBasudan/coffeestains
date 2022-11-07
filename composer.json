@@ -25,8 +25,11 @@
         "drupal/core-recommended": "^9.3",
         "drupal/core-vendor-hardening": "^9.3",
         "drupal/devel": "^4.1",
+        "drupal/fontawesome": "^2.24",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/phone_international": "^3.2",
         "drupal/simplify_menu": "^2.1",
+        "drupal/slick_views": "^2.6",
         "drupal/twig_tweak": "^3.1",
         "drush/drush": "^11.0"
     },

@@ -137,3 +137,145 @@ form.commerce-order-item-add-to-cart-form span.input-group-addon {
 span.icon.glyphicon.glyphicon-refresh.ajax-progress.ajax-progress-throbber {
     display: none;
 }
+
+.login-area .container {
+    display: flex;
+    justify-content: center;
+}
+
+.user-login-form .input-group .form-item .form-control {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    color: #999;
+    height: 40px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: none;
+}
+
+.user-login-form .form-group {
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.user-login-form .form-group .btn-primary {
+    border-color: white;
+}
+
+.user-login-form .form-group .btn-primary:hover {
+    background-color: #c87065;
+}
+
+.user-register-form .input-group .form-item .form-control {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    color: #999;
+    height: 40px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: none;
+}
+
+.user-register-form .form-group {
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.user-register-form .form-group .button--primary {
+    border-color: white;
+}
+
+.user-register-form .form-group .button--primary:hover {
+    background-color: #c87065;
+}
+
+.user-pass .input-group .form-item .form-control {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    color: #999;
+    height: 40px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: none;
+}
+
+.user-pass .form-group .btn-primary {
+    border-color: white;
+}
+
+.user-pass .form-group .btn-primary:hover {
+    background-color: #c87065;
+}
+
+.text-gray.float-right {
+    color: #999;
+    float: right;
+}
+
+.menu-toggle.menu-toggle-2.hamburger {
+    width: 25%;
+}
+
+i.fa {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+nav.pager-nav {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    height: 50px;
+    margin: 0;
+    border-radius: 0;
+}
+
+nav.pager-nav ul {
+    display: inline-block;
+}
+
+nav.pager-nav ul li {
+    display: block;
+    float: left;
+    padding: 10px 0;
+}
+
+nav.pager-nav ul li a {
+    color: #666;
+    display: block;
+    line-height: 30px;
+    padding: 0 6px;
+    border: none;
+}
+
+nav.pager-nav ul li a i {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+nav.pager-nav ul li.active a,
+nav.pager-nav ul li:hover a {
+    color: #c8a165;
+    background: none;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    ;
+}
+
+ul.breadcrumb-block {
+    display: flex;
+    align-items: center;
+    color: #7e7e7e;
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0;
+}

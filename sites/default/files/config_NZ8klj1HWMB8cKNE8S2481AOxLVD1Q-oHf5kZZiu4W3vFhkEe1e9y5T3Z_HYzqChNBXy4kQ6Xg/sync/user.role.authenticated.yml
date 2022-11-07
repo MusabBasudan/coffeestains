@@ -12,6 +12,8 @@ dependencies:
     - commerce_product
     - contact
     - filter
+    - fontawesome
+    - media
     - search
     - shortcut
     - system
@@ -25,6 +27,7 @@ permissions:
   - 'access checkout'
   - 'access comments'
   - 'access content'
+  - 'access fontawesome additional settings'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'manage own commerce_payment_method'
@@ -33,4 +36,5 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view commerce_product'
+  - 'view media'
   - 'view own commerce_order'

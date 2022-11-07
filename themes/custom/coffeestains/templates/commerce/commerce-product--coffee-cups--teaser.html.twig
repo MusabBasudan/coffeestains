@@ -1,26 +1,18 @@
 <div class="single-product">
 	<div class="product-img">
 		<span class="pro-label new-label">new</span>
-		<a href="{{ url }}">
+		<a href="{{ product_url }}">
 			{% if product.field_image is not empty %}
 				{{ product.field_image }}
 			{% endif %}
 		</a>
-		<div class="product-action clearfix">
-			<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Wishlist">
-				<i class="zmdi zmdi-favorite-outline"></i>
-			</a>
-			<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart">
-				<i class="zmdi zmdi-shopping-cart-plus"></i>
-			</a>
-		</div>
 	</div>
 	<div class="product-info clearfix">
 		<div class="fix">
 			<h4 class="post-title floatleft">
-				<a href="{{ url }}">{{ product.title }}</a>
+				<a href="{{ product_url }}">{{ product.title }}</a>
 			</h4>
-			<p class="floatright hidden-sm">{{ node.type.entity.label }}</p>
+			<p class="floatright hidden-sm">{{ product.type }}</p>
 		</div>
 		<div class="fix">
 			{% if product.variation_price is not empty %}

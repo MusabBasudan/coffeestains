@@ -1,0 +1,19 @@
+uuid: 26f5deb1-adc6-4efa-9aa2-ab8b4807c620
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment_example
+id: test
+label: Test
+weight: null
+plugin: example_stored_offsite_redirect
+configuration:
+  display_label: 'Example Stored Offsite'
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  redirect_method: post
+conditions: {  }
+conditionOperator: AND

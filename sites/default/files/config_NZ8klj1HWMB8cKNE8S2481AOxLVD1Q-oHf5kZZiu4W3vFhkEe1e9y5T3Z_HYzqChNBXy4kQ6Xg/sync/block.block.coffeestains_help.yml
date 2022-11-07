@@ -11,7 +11,7 @@ _core:
 id: coffeestains_help
 theme: coffeestains
 region: content
-weight: -30
+weight: -8
 provider: null
 plugin: help_block
 settings:

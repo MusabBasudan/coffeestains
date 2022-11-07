@@ -8,8 +8,10 @@ dependencies:
     - comment
     - commerce_checkout
     - commerce_product
+    - commerce_store
     - contact
     - filter
+    - media
     - search
     - system
 _core:
@@ -21,8 +23,11 @@ is_admin: false
 permissions:
   - 'access checkout'
   - 'access comments'
+  - 'access commerce_store overview'
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
   - 'view commerce_product'
+  - 'view media'
+  - 'view online commerce_store'

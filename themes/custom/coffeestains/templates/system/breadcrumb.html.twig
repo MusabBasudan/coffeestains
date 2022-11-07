@@ -1,0 +1,27 @@
+{% if breadcrumb %}
+	<section class="breadcrumb pt-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="shop-content mt-tab-30 mt-xs-30">
+						<div class="product-option mb-30 clearfix">
+							<div class="showing  d-none d-md-block">
+								<ul class="breadcrumb-block">
+									{% for item in breadcrumb %}
+										<li {{ item.attributes ? item.attributes.addClass("breadcrumb-item") : 'class="breadcrumb-item"' }}>
+											{% if item.url %}
+												<a href="{{ item.url }}">{{ item.text }}</a>
+											{% else %}
+												{{ item.text }}
+											{% endif %}
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endif %}

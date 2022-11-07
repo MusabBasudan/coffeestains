@@ -119,8 +119,10 @@
 			<section{{content_attributes.addClass(content_classes)}}>
 
 				{# Content #}
+
 				{% block content %}
 					<a id="main-content"></a>
+					{{ page.breadcrumbs }}
 					{{ page.content }}
 				{% endblock %}
 			</section>

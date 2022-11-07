@@ -1,0 +1,21 @@
+uuid: 4b28c13a-bfbc-47e5-b547-eff855990e43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_phone_number
+  module:
+    - phone_international
+    - user
+id: user.user.field_phone_number
+field_name: field_phone_number
+entity_type: user
+bundle: user
+label: 'Mobile Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: phone_international
