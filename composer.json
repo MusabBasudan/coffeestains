@@ -16,8 +16,10 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/address": "^1.11",
         "drupal/admin_toolbar": "^3.1",
         "drupal/better_exposed_filters": "^6.0",
+        "drupal/blazy": "^2.13",
         "drupal/bootstrap": "^3.24",
         "drupal/commerce": "^2.31",
         "drupal/core-composer-scaffold": "^9.3",
@@ -31,6 +33,7 @@
         "drupal/simplify_menu": "^2.1",
         "drupal/slick_views": "^2.6",
         "drupal/twig_tweak": "^3.1",
+        "drupal/user_current_paths": "^2.0",
         "drush/drush": "^11.0"
     },
     "conflict": {

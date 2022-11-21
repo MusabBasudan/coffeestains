@@ -1,0 +1,65 @@
+<div class="shopping-cart-area pb-80">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="shopping-cart">
+					<ul class="cart-page-menu nav row clearfix mb-30">
+						<li>
+							<a class="active" data-bs-toggle="tab">shopping cart</a>
+						</li>
+						<li>
+							<a href="#check-out" data-bs-toggle="tab">check out</a>
+						</li>
+						<li>
+							<a href="#order-complete" data-bs-toggle="tab">order complete</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="shopping-cart">
+							<div class="shop-cart-table">
+								<div class="table-content table-responsive">
+								{{table}}
+								</div>
+							</div>
+							{# <div class="row">
+								<div class="col-md-6">
+									<div class="customer-login mt-30">
+										<h4 class="title-1 title-border text-uppercase">coupon discount</h4>
+										<p class="text-gray">Enter your coupon code if you have one!</p>
+										<input type="text" placeholder="Enter your code here.">
+										<button type="submit" data-text="apply coupon" class="button-one submit-button mt-15">apply coupon</button>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="customer-login payment-details mt-30">
+										<h4 class="title-1 title-border text-uppercase">payment details</h4>
+										<table>
+											<tbody>
+												<tr>
+													<td class="text-left">Cart Subtotal</td>
+													<td class="text-end">$155.00</td>
+												</tr>
+												<tr>
+													<td class="text-left">Cart Subtotal</td>
+													<td class="text-end">$15.00</td>
+												</tr>
+												<tr>
+													<td class="text-left">Vat</td>
+													<td class="text-end">$00.00</td>
+												</tr>
+												<tr>
+													<td class="text-left">Order Total</td>
+													<td class="text-end">$170.00</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div> #}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

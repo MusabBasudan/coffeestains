@@ -1,0 +1,33 @@
+<div class="my-account-area pb-80">
+	<div class="container">
+		<div class="row">
+			{% set main = simplify_menu('account') %}
+			<ul class="user-page-menu nav row clearfix mb-30">
+				{% for tree in main.menu_tree %}
+					{% if not tree.submenu %}
+						<li>
+							<a href="{{ tree.url }}">{{ tree.text }}</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+			<div class="col-md-6 offset-md-3">
+				<div class="panel-group" id="accordion">
+					<div class="panel mb-2">
+						<div class="my-account-menu">
+							<p>
+								Edit Account Information
+							</p>
+						</div>
+						<div id="my-info" class="panel-collapse collapse show" data-bs-parent="#accordion">
+							<div class="panel-body">
+								{{form}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

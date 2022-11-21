@@ -50,6 +50,10 @@ function coffeestains_theme($existing, $type, $theme, $path)
       'render element' => 'form',
       'template' => 'form/user-password-form',
     ),
+      'user_form' => array(
+      'render element' => 'form',
+      'template' => 'form/user-edit-form',
+    ),
   ];
 }
 

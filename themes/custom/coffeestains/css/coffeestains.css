@@ -193,6 +193,57 @@ span.icon.glyphicon.glyphicon-refresh.ajax-progress.ajax-progress-throbber {
     background-color: #c87065;
 }
 
+.user-form .form-group {
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.user-form .form-group input {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    color: #999;
+    height: 40px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: none;
+}
+
+.user-form .form-group .form-number {
+    width: 73.9%;
+}
+
+.user-form .form-group .button--primary {
+    border-color: white;
+}
+
+.user-form .form-group .button--primary:hover {
+    background-color: #c87065;
+}
+
+.my-account-area .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-account-area .container ul {
+    padding-left: revert;
+}
+
+.my-account-menu p {
+    background: #C8A165;
+    color: #fff;
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
 .user-pass .input-group .form-item .form-control {
     background: #f6f6f6 none repeat scroll 0 0;
     border: medium none;
@@ -278,4 +329,130 @@ ul.breadcrumb-block {
     font-size: 15px;
     list-style-type: none;
     padding: 0;
+}
+
+.password-confirm-message {
+    display: none;
+}
+
+.billing-details .custom-select {
+    background: #f6f6f6 url("../assets/img/bg/angel-down.png") no-repeat scroll 97% center;
+    color: #999;
+    height: 40px;
+    text-align: center;
+}
+
+.billing-details input {
+    text-align: center;
+}
+
+.user-page-menu li {
+    float: left;
+    padding: 0 15px;
+    width: 25%;
+}
+
+.user-page-menu li a {
+    background: #fff none repeat scroll 0 0;
+    color: #999;
+    display: block;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+.account-information {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: medium none;
+    color: #999;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.account-information.address {
+    width: 32%;
+    float: left;
+    margin: 3px;
+}
+
+.account-information.address-line-1 {
+    margin-top: 75px;
+}
+
+.table-responsive {
+    background: none;
+    width: 80%;
+    float: center;
+    position: center;
+    margin-left: 142px;
+}
+
+.table-responsive table th {
+    background: #f6f6f6 none repeat scroll 0 0;
+    font-weight: 700;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table-responsive table td {
+    border-top: medium none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-responsive table td button{
+    margin-top: 5px;
+}
+
+.order-total-line {
+    background: none;
+    width: 80%;
+    float: center;
+    position: center;
+    margin-left: 142px;
+}
+
+.view-commerce-cart-form .form-actions button#edit-submit {
+    margin-left: 150px;
+    border: none;
+    background-color: lightgray;
+}
+
+.view-commerce-cart-form .form-actions button#edit-checkout {
+    color: white;
+    background-color: green;
+}
+
+.layout-region.layout-region-checkout-main {
+    width: 50%;
+    float: center;
+    position: center;
+    margin-left: 142px;   
+}
+
+.layout-region.layout-region-checkout-secondary {
+    float: left;
+    width: 25%;
+    margin-top: 90px;
+}
+
+.layout-region.layout-region-checkout-footer {
+    text-align: end;
+    margin-left: 280px;
+    float: unset;
+    padding-top: 275px;
+}
+
+.layout-region.layout-region-checkout-footer button {
+    background-color: green;
+    border: none;
 }

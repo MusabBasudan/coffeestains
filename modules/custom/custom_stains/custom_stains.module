@@ -62,12 +62,17 @@ function custom_stains_form_alter(&$form, FormStateInterface $form_state, $form_
   if ($form_id == 'user_register_form') { 
     unset($form['account']['mail']['#description']);
     unset($form['account']['name']['#description']);
-    unset($form['pass']['#description']);
+    unset($form['account']['pass']['#description']);
     unset($form['field_mobile_number'][0]['#format']);
     unset($form['field_mobile_number']['#description']['#help']);
     $form['actions']['submit']['#attributes']['class'][] = 'button-one submit-button mt-15';
   }
   if ($form_id == 'user_pass') { 
     $form['actions']['submit']['#attributes']['class'][] = 'button-one submit-button';
+  }
+  if ($form_id == 'user_form') { 
+    unset($form['account']['mail']['#description']);
+    unset($form['account']['pass']['#description']);
+    $form['actions']['submit']['#attributes']['class'][] = 'button-one submit-button mt-15';
   }
 }

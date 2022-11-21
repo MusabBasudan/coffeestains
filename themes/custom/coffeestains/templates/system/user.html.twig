@@ -1,0 +1,72 @@
+<div class="my-account-area pb-80">
+	<div class="container">
+		<div class="row">
+			{% set main = simplify_menu('account') %}
+			<ul class="user-page-menu nav row clearfix mb-30">
+				{% for tree in main.menu_tree %}
+					{% if not tree.submenu %}
+						<li>
+							<a href="{{ tree.url }}">{{ tree.text }}</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+			<div class="col-md-6 offset-md-3">
+				<div class="panel-group" id="accordion">
+					<div class="panel mb-2">
+						<div class="my-account-menu">
+							<p>
+								Account Information
+							</p>
+						</div>
+						<div id="my-info" class="panel-collapse collapse show" data-bs-parent="#accordion">
+							<div class="panel-body">
+								<div class="billing-details shop-cart-table">
+									<div class="account-information">
+										{{ user.name.value }}
+									</div>
+									<div class="account-information">
+										{{ user.mail.value }}
+									</div>
+									{% if user.field_mobile_number.value  %}
+										<div class="account-information">
+											{{ user.field_mobile_number.value }}
+										</div>
+									{% else %}
+										<div class="account-information">{{'Mobile Number...'|t}}</div>
+									{% endif %}
+									{% if user.field_address.country_code %}
+										<div class="account-information address">
+											{{ user.field_address.country_code }}
+										</div>
+									{% endif %}
+									{% if user.field_address.administrative_area  %}
+										<div class="account-information address">
+											{{ user.field_address.administrative_area }}
+										</div>
+									{% else %}
+										<div class="account-information address">{{'Region...'|t}}</div>
+									{% endif %}
+									{% if user.field_address.locality  %}
+										<div class="account-information address">
+											{{ user.field_address.locality }}
+										</div>
+									{% else %}
+										<div class="account-information address">{{'City...'|t}}</div>
+									{% endif %}
+									{% if user.field_address.address_line1  %}
+										<div class="account-information address-line-1">
+											{{ user.field_address.address_line1 }}
+										</div>
+									{% else %}
+										<div class="account-information address-line-1">{{'Address...'|t}}</div>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
